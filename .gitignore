@@ -1,0 +1,50 @@
+# ===== Python / Backend =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.so
+
+# SQLite database
+*.db
+*.sqlite3
+
+# ===== Environment variables (NEVER commit secrets) =====
+.env
+!backend/.env.example
+!frontend/.env.example
+
+# ===== Node / Frontend =====
+node_modules/
+frontend/dist/
+frontend/build/
+*.local
+
+# ===== Vite / Tooling =====
+.vite/
+.cache/
+
+# ===== ChromaDB vector store =====
+backend/app/rag/chroma_db/
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== Logs =====
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
