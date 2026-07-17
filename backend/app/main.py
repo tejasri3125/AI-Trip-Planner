@@ -18,11 +18,13 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS configurations
+# CORS configurations — includes local dev, Render, and Vercel deployments
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "*"  # Allow all for robustness during setup/deployment
+    # Add your Vercel frontend URL here after deployment, e.g.:
+    # "https://ai-trip-planner-tejasri.vercel.app",
+    "*",  # Allow all origins — safe for public APIs; restrict in production if needed
 ]
 
 app.add_middleware(

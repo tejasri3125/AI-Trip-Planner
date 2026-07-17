@@ -7,8 +7,6 @@ COPY ./requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY ./app /code/app
-COPY ./__init__.py /code/__init__.py
-COPY .env /code/.env
 
 EXPOSE 8000
 
